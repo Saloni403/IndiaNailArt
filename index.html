@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="web/Css/style.css" />
+    <title>new file</title>
+    <style>
+      .imgsec {
+        position: relative;
+      }
+      .hovertext {
+        background: black !important;
+        padding: 10px 20px;
+
+        opacity: 0;
+        color: white;
+        font-size: 20px;
+        transition: 0.3s ease;
+      }
+      .hovereffect {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: 0.3s ease;
+        /* z-index: 5; */
+      }
+      /* .image{
+        width: 100%;
+      } */
+
+      .imgsec:hover .hovereffect {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .imgsec:hover .hovertext {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+          <a class="navbar-brand" href="#">
+            <img
+              src="web/Images/companylogo-removebg-preview.png"
+              alt="Logo"
+              width="100"
+              class="d-inline-block align-text-center"
+            />
+          </a>
+          <div class="d-lg-none text-danger">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <div id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ournailartservices">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#viewallservices">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ourservices">Locations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#stoptimestaybeautyful">Gallery</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#makeappointment">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- mobile view menu -->
+    <section class="menu">
+      <i class="fa-solid fa-xmark"></i>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ournailartservices">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#viewallservices">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ourservices">Locations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#stoptimestaybeautyful">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#makeappointment">Contact Us</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- whatsapp and phone icon -->
+    <div class="icons">
+      <a
+        href="//api.whatsapp.com/send?phone=919599669486"
+        target="_blank"
+        title="Share on whatsapp"
+      >
+        <i class="fa-brands fa-whatsapp" style="color: #ffffff"></i
+      ></a>
+      <a href="tel:+919599669486"
+        ><i class="fa-solid fa-phone mobilephone" style="color: #3d19f0"></i
+      ></a>
+    </div>
+
+    <!-- banner -->
+    <section class="banner">
+      <div class="container">
+        <div class="row bannerrow">
+          <div
+            class="col-lg-6 col-md-8 d-flex flex-column align-items-center justify-content-center text-center"
+          >
+            <h1>Best Nails For Best Moments</h1>
+            <p style="font-weight: 600">
+              Step into a world of exquisite beauty and creativity with our
+              cutting-edge nail designs. Experience luxury and artistry like
+              never before with our unparalleled 3D nail art services.
+            </p>
+            <a href="" class="btn btn-danger opacity-75 text-white"
+              >BOOK APPOINTMENT</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Nail Arts & Care Services​ -->
+    <section class="sectiones" id="ournailartservices">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="centercontentheading">
+              <span><b>Fresh, Shiny, Bright</b></span>
+              <h1 class="text-danger opacity-75">
+                Our Nail Arts & Care Services​
+              </h1>
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-3">
+            <img src="web/Images/section1polish.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best eyelashes extension Studio -->
+    <section class="sectiones bg-lightpink">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="centercontentheading">
+              <h1>Lashes Extention Studio</h1>
+              <p>
+                Eyelash extensions are used to enhance the length, curl,
+                fullness, and thickness of natural eyelashes. Adhesive glue is
+                used to individually stick the extensions to the eyelashes one
+                by one, preventing the eyelashes from sticking together.
+              </p>
+              <h1>Hair Extension</h1>
+              <p>
+                With hair extensions, you can achieve any hair style you desire,
+                whether extreme or subtle. Your extensions can be straight, wavy
+                or as curly as you want. Our stylists can help you determine the
+                best method for your hair type, lifestyle and budget.
+              </p>
+
+              <a href="" class="btn btn-danger opacity-75 mt-3 bookbtn"
+                >BOOK APPOINTMENT</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 mt-3">
+            <div class="centercontentheading">
+              <img class="img-fluid" src="web/Images/Hair.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- view all services -->
+    <section class="sectiones" id="viewallservices">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="p-3 text-center servicecard">
+              <img
+                class="img-fluid mb-3"
+                src="web/Images/nail-salon-line-drawing-vector.jpg"
+                alt=""
+              />
+              <h4>Manicure</h4>
+              <p>
+                Experience tailored hand care with our manicure services,
+                ensuring your nails look polished and pristine.
+              </p>
+              <a href="" class="btn categ">View All Services</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="p-3 text-center servicecard">
+              <img class="img-fluid mb-3" src="web/Images/polish.webp" alt="" />
+              <h4>Nail Polish</h4>
+              <p>
+                Select from an extensive palette of stunning, durable nail
+                polish shades for a flawless finish that complements any
+                occasion or style.
+              </p>
+              <a href="" class="btn categ">View All Services</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="p-3 text-center servicecard">
+              <img
+                class="img-fluid mb-3"
+                src="web/Images/pedicure.jpg"
+                alt=""
+              />
+              <h4>Pedicure</h4>
+              <p>
+                Relax and rejuvenate with our pedicure services, offering
+                soothing treatments for beautiful, healthy feet.
+              </p>
+              <a href="" class="btn categ">View All Services</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="p-3 text-center servicecard">
+              <img class="img-fluid mb-3" src="web/Images/nailext.jpg" alt="" />
+              <h4>Nail Extension</h4>
+              <p>
+                Our nail extension services offer a variety of lengths and
+                shapes, providing a durable, elegant enhancement to your natural
+                nails.
+              </p>
+              <a href="" class="btn categ">View All Services</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="p-3 text-center servicecard">
+              <img
+                class="img-fluid mb-3"
+                src="web/Images/nailremove.webp"
+                alt=""
+              />
+              <h4>Nail Removal</h4>
+              <p>
+                Professional and gentle nail removal services, ensuring the
+                health of your natural nails is preserved.
+              </p>
+              <a href="" class="btn categ">View All Services</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="p-3 text-center servicecard">
+              <img class="img-fluid mb-3" src="web/Images/nailart.jpg" alt="" />
+              <h4>Nail Art & Accessories</h4>
+              <p>
+                Elevate your style with custom nail art and chic accessories.
+                Our experts craft unique designs that reflect your personality
+                perfectly.
+              </p>
+              <a href="" class="btn categ">View All Services</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Nail Art Studio -->
+    <section class="sectiones bg-lightpink">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="centercontentheading">
+              <img class="img-fluid" src="web/Images/nailpaintimg.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="">
+              <h1 class="">Best Nail Art Studio</h1>
+              <p>
+                Show off your true colors with our amazing nail art designs.
+                Discover your true colors at 3D Nail Art Studio, Bangalore.
+                Transform your nails into stunning works of art that reflect
+                your unique style and personality. Whether you prefer elegant
+                simplicity or daring designs, our skilled artists bring your
+                vision to life. Experience luxury and creativity at every visit
+                in Basaveshwar Nagar, Banashankari, and Koramangala. Let us
+                elevate your nails into vibrant canvases, showcasing the
+                colorful, vibrant you!
+              </p>
+              <h3 class="">Elegance in Every Stroke</h3>
+              <ul>
+                <li>
+                  Exquisite Designs: Transform your nails with intricate
+                  patterns and stunning details crafted by skilled artists.
+                </li>
+                <li>
+                  Personalized Service: Experience luxury and tailored care that
+                  brings your unique style to life.
+                </li>
+                <li>
+                  Unmatched Creativity: Discover a haven where creativity meets
+                  elegance, ensuring your nails stand out beautifully.
+                </li>
+              </ul>
+              <a href="" class="btn btn-danger opacity-75 mt-3 bookbtn"
+                >BOOK APPOINTMENT</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Nails For Every Budget -->
+    <section class="sectiones">
+      <div class="container">
+        <div class="row justify-content-around">
+          <div class="col-12 p-2 mt-3" id="smalltitle">
+            <h6>Nails And Beyond…</h6>
+          </div>
+          <div class="col-12 p-3" id="titleheading">
+            <h1>Nails For Every Budget</h1>
+          </div>
+
+          <div class="col-md-4 p-3 text-center">
+            <div class="imgsec">
+              <img
+                class="img-fluid image"
+                src="web/Images/imggallary1square2.jpg"
+                alt=""
+              />
+
+              <div class="hovereffect">
+                <div class="hovertext">Nails Treatments</div>
+              </div>
+            </div>
+            <h6 class="my-2">From 04.07.24 To 10.07.24</h6>
+            <h4>5% OFF on Classic Manicure & Pedicure</h4>
+          </div>
+
+          <div class="col-md-4 p-3 text-center">
+            <div class="imgsec">
+              <img
+                class="img-fluid image"
+                src="web/Images/imggallary6square.jpg"
+                alt=""
+              />
+              <div class="hovereffect">
+                <div class="hovertext">Lashes Extention</div>
+              </div>
+            </div>
+            <h6 class="my-2">All Autumn Long!</h6>
+            <h4>Prices Reduced On Spa Procedures UP TO 5%</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- What People are Saying -->
+    <section class="sectiones bg-lightpink">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 p-2 mt-3" id="smalltitle">
+            <h6>Testimonials</h6>
+          </div>
+          <div class="col-12 p-3" id="titleheading">
+            <h1>What People are Saying</h1>
+          </div>
+          <div class="col-md-6">
+            <div class="centercontentheading p-3">
+              <p style="font-size: 25px">
+                We want to make every girl pretty, happy, and loved!
+              </p>
+              <h1 style="font-size: 80px">5% Off</h1>
+              <h4>on Manicure + Gel Polish</h4>
+              <a href="" class="btn btn-danger opacity-75 mt-3 bookbtn"
+                >BOOK APPOINTMENT</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6 p-3">
+            <img
+              class="img-fluid"
+              src="web/Images/whatpeopelsaybanner.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Stop Time. Stay Beautiful -->
+    <section class="sectiones" id="stoptimestaybeautyful">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 p-2 mt-3" id="smalltitle">
+            <h6>Images Gallery</h6>
+          </div>
+          <div class="col-12 p-3" id="titleheading">
+            <h1>Stop Time. Stay Beautiful</h1>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-4">
+                <div class="row">
+                  <div class="col-12 mb-4">
+                    <img
+                      class="img-fluid"
+                      src="web/Images/imggallary1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-12 mb-4">
+                    <img
+                      class="img-fluid"
+                      src="web/Images/imggallary5.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-12 mb-4">
+                    <img
+                      class="img-fluid"
+                      src="web/Images/imggallary7.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="row">
+                  <div class="col-12 mb-4">
+                    <img
+                      class="img-fluid"
+                      src="web/Images/imggallary2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-12 mb-4">
+                    <img
+                      class="img-fluid"
+                      src="web/Images/imggallary4.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-12 mb-4">
+                    <img
+                      class="img-fluid"
+                      src="web/Images/imggallary8.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="row">
+                  <div class="col-12 mb-4">
+                    <img
+                      class="img-fluid"
+                      src="web/Images/imggallary3.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-12 mb-4">
+                    <img
+                      class="img-fluid"
+                      src="web/Images/imggallary6.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-12 mb-4">
+                    <img
+                      class="img-fluid"
+                      src="web/Images/imggallary9.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+          <a
+            href=""
+            class="btn btn-danger opacity-75 mt-5"
+            style="font-size: 20px"
+            >Visit Our Instagram</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Make An Appointment -->
+    <!-- <section class="sectiones" id="makeappointment">
+      <div class="container bg-lightpink p-0">
+        <div class="row">
+          <div class="col-md-6 ">
+        <img class="img-fluid" src="web/images/makeanappointment.jpg">
+          </div>
+          <div class="col-md-6  ">
+            <div class="formclass  p-5">
+            <form action="">
+              <h6>Booking now</h6>
+              <h1>Make An Appointment</h1>
+
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-6">
+                  <input type="text" placeholder="First Name*" />
+                </div>
+                <div class="col-lg-6 col-md-12 col-6">
+                  <input type="text" placeholder="Last Name*" />
+                </div>
+                <div class="col-lg-6 col-md-12 col-6">
+                  <input type="email" placeholder="Email Address*" />
+                </div>
+                <div class="col-lg-6 col-md-12 col-6">
+                  <input type="tel" placeholder="Phone Number" /><br />
+                </div>
+                <div class="col-12">
+                  <select
+                    class="w-100"
+                    name=""
+                    id=""
+                    placeholder="select Services"
+                  >
+                    <option value="Select Services">Select Services</option>
+                    <option value="Nail Art">Nail Art</option>
+                    <option value="Spa Pedicure">Spa Pedicure</option>
+                    <option value="Eyelashes">Eyelashes</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <input
+                    class="w-100"
+                    type="date"
+                    placeholder="Type date here"
+                  />
+                </div>
+              </div>
+              <a href="" class="btn btn-danger opacity-75 mt-3  "
+                >BOOK NOW</a
+              >
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="bg-lightpink sectiones">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6 ">
+            <div class="centercontentheading">
+            <img src="web/images/makeanappointment.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+             <div class="col-12 p-2 mt-3" id="smalltitle">
+            <h6>Booking now</h6>
+          </div>
+          <div class="col-12 p-3" id="titleheading">
+            <h1>Make An Appointment</h1>
+          </div>
+           <div class="col-6  ">
+                  <input type="text" placeholder="First Name*" />
+                </div>
+                <div class="col-6 ">
+                  <input type="text" placeholder="Last Name*" />
+                </div>
+                <div class="col-6 ">
+                  <input type="email" placeholder="Email Address*" />
+                </div>
+                <div class="col-6 ">
+                  <input type="tel" placeholder="Phone Number" /><br />
+                </div>
+                <div class="col-12">
+                  <select
+                    class="w-100"
+                    name=""
+                    id=""
+                    placeholder="select Services"
+                  >
+                    <option value="Select Services">Select Services</option>
+                    <option value="Nail Art">Nail Art</option>
+                    <option value="Spa Pedicure">Spa Pedicure</option>
+                    <option value="Eyelashes">Eyelashes</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <input
+                    class="w-100"
+                    type="date"
+                    placeholder="Type date here"
+                  />
+                </div>
+                
+          </div>
+          <a href="" class="btn btn-danger">Book Appointment</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Services -->
+    <section class="sectiones" id="ourservices">
+      <div class="container">
+        <div class="row ">
+          <div class="col-12 p-2 mt-3" id="smalltitle">
+            <h6>Find A 3D Nail Art And Eyelashes Studio Near You...</h6>
+          </div>
+          <div class="col-12 p-3" id="titleheading">
+            <h1>Our Services</h1>
+          </div>
+          
+          <div class="col-md-4 ">
+             <div class="carddesign mb-3">
+            <img class="img-fluid" src="web/Images/servicesimg1.jpg" alt="" />
+            <h3 class="my-2">Nail Extention</h3>
+            <p class="homeservice mb-2">
+              <i class="fa-solid fa-house"></i> Home Services
+            </p>
+            <a href="" class="pno"
+              ><i class="fa-solid fa-phone"></i> +91 9213751875</a
+            ><br />
+            <a href="" class="btn btn-danger opacity-75 mt-3">Enquiry Now</a>
+          </div>
+          </div>
+           <div class="col-md-4 ">
+            <div class="carddesign mb-3">
+            <img class="img-fluid" src="web/Images/servicesimg2.jpg" alt="" />
+            <h3 class="my-2">Eyelashes </h3>
+            <p class="homeservice mb-2">
+              <i class="fa-solid fa-house"></i> Home Services
+            </p>
+            <a href="" class="pno"
+              ><i class="fa-solid fa-phone"></i> +91 9213751875</a
+            ><br />
+            <a href="" class="btn btn-danger opacity-75 mt-3">Enquiry Now</a>
+          </div>
+          </div>
+          <div class="col-md-4 ">
+              <div class="carddesign mb-3">
+            <img class="img-fluid" src="web/Images/hairextension.jpg"  alt="" />
+            <h3 class="my-2">Hairs </h3>
+            <p class="homeservice mb-2">
+              <i class="fa-solid fa-house"></i> Home Services
+            </p>
+            <a href="" class="pno"
+              ><i class="fa-solid fa-phone"></i> +91 9213751875</a
+            ><br />
+            <a href="" class="btn btn-danger opacity-75 mt-3">Enquiry Now</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ <!-- Working Hours -->
+    <section class="bg-lightpink">
+      <div class="container py-5">
+        <div class="row justify-content-around">
+          <div class="col-md-6 ">
+            <table class="w-100 ">
+              <tr>
+                <td>Mon</td>
+                <td>10:00 AM - 9:00 PM</td>
+              </tr>
+              <tr>
+                <td>Mon</td>
+                <td>10:00 AM - 9:00 PM</td>
+              </tr>
+              <tr>
+                <td>Mon</td>
+                <td>10:00 AM - 9:00 PM</td>
+              </tr>
+              <tr>
+                <td>Mon</td>
+                <td>10:00 AM - 9:00 PM</td>
+              </tr>
+              <tr>
+                <td>Mon</td>
+                <td>10:00 AM - 9:00 PM</td>
+              </tr>
+              <tr>
+                <td>Mon</td>
+                <td>10:00 AM - 9:00 PM</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center">
+            <div class="mt-3 mx-md-3">
+            <h6>Time Schedule</h6>
+            <h1>Working Hours</h1>
+            <p>
+              Our convenient schedule crafted to suit your lifestyle. We're here
+              to serve you with flexible hours that ensure you can indulge in
+              exquisite nail artistry at your convenience. Whether you prefer
+              morning appointments or evening sessions, our doors are open to
+              enhance your beauty whenever you need.
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- footer -->
+    <footer class="bg-dark">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-4 text-center text-white">
+            <img
+              class="img-fluid"
+              width="80"
+              src="web/Images/companylogo-removebg-preview.png"
+              alt=""
+            />
+            <p>💅Nail | Skin | 💇Hair | 🦶Pedicure | Manicure</p>
+            <p>
+              Our studio is dedicated to transforming nails into stunning works
+              of art. With a passion for creativity and precision, we offer
+              personalized designs that reflect your unique style and elegance.
+            </p>
+            <i class="fa-brands fa-facebook p-1" style=" color: blue; border-radius: 5px; background-color: #ffffff; font-size: 20px; margin-right: 5px;" ></i>
+            <i class="fa-brands fa-instagram p-1" style="font-size: 20px; border-radius: 5px;padding: 2px; color: #ffffff; background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f
+60%, #285aeb 90%); margin-left: 5px;"></i>
+          </div>
+          <div
+            class="col-lg-4 col-sm-6 text-white "
+          >
+          <div class="fotterdiv  mt-lg-0 mt-3">
+            <h2>Quick Links</h2>
+            <ul class="p-0">
+              <li><a href="">Home</a></li>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Locations</a></li>
+              <li><a href="">Gallery</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </div>
+          </div>
+          <div
+            class="col-lg-4 col-sm-6 text-white  "
+          > <div class="fotterdiv mt-lg-0 mt-3">
+            <h2>Our Services</h2>
+            <ul class="p-0">
+              <li><a href="">Nail Polish</a></li>
+              <li><a href="">Nail Extensions</a></li>
+              <li><a href="">Nail Removals</a></li>
+              <li><a href="">Manicure</a></li>
+              <li><a href="">Pedicure</a></li>
+              <li><a href="">Eyslashes Extension</a></li>
+              <li><a href="">Hair Extension</a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+        <div class="row  mt-3">
+          <div class="col-lg-6 ">
+          <a href="tssg-tech.com" class="text-white">  Copyright ©2025 Tssg-Tech. All Rights Reserved</a>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="web/Js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --lightpink-color: rgb(245, 241, 242);
+}
+
+.bg-lightpink {
+  background-color: var(--lightpink-color);
+}
+.sectiones {
+  margin: 50px 0;
+} 
+/* header */
+header{
+    position: sticky !important;
+    top: 0 !important;
+    background-color: var(--lightpink-color);
+     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+     z-index: 999;
+}
+
+#navbarNav a {
+  font-size: large;
+  font-weight: 600;
+}
+.nav-item {
+  margin: 0 10px;
+}
+#navbarNav a:hover {
+  background-color: rgba(220, 53, 69, 0.75);
+  color: white;
+  border-radius: 5px;
+}
+/* menu */
+.menu {
+  padding: 20px;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(220, 53, 69, 0.75);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  right: -300px;
+  top: 0;
+  transition: 0.3s;
+  line-height: 3;
+  z-index: 9999;
+  color: #fff;
+}
+/* fixed icons */
+.fa-whatsapp {
+  background-color: green;
+  padding: 6px 8px;
+font-size: 2.5vmax;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+border-radius: .5rem;
+}
+.mobilephone{
+  background-color: #fff;
+  padding: 6px;
+font-size: 2.5vmax;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+border-radius: .5rem;
+}
+    .icons{
+      position: fixed;
+      right: 2.5vmax;
+      bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      z-index: 99;
+    }
+
+    /* banner */
+    .banner {
+  height: 600px;
+  background-image: url(../Images/herobannerimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bannerrow {
+  height: 600px;
+  padding: 20px 0;
+}
+.bannerrow h1 {
+  font-size: 70px;
+}
+
+.centercontentheading{
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bookbtn{
+    width: fit-content;
+}
+.servicecard {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 40px;
+}
+.servicecard img{
+  border-radius:  40px 40px 0 0;
+}
+.categ {
+  font-weight: bold;
+  display: inline-block;
+  border-bottom: 4px solid rgba(220, 53, 69, 0.75);
+  border-radius: 0;
+  border-width: 4px;
+}
+#smalltitle,#titleheading  {
+  text-align: center;
+}
+input,select{
+  width: 100%;
+  padding: 5px 10px ;
+  margin: 10px 0;
+}
+.carddesign {
+  box-shadow: rgba(195, 77, 77, 0.24) 0px 3px 8px;
+  border-radius: 40px;
+  padding: 20px;
+  text-align: center;
+}
+.carddesign img {
+  border-radius: 20px;
+}
+/* table */
+table {
+  width: 100%; /* Ensures the table spans the full width of its container */
+  table-layout: fixed; /* Ensures equal column widths */
+  border-collapse: collapse;
+  font-weight: bold;
+}
+table tr {
+  border-bottom: 2px dotted black;
+}
+tr td:last-child {
+  text-align: end;
+}
+table td {
+  padding: 10px 0;
+  font-size: large;
+}
+/* footer */
+a {
+  text-decoration: none;
+  color: #000;
+}
+footer li {
+  list-style: none;
+}
+footer li a {
+  color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  #navbarNav {
+    display: none;
+  }
+   .bannerrow h1 {
+    font-size: 6vmin;
+  }
+  .bannerrow {
+     height: 500px;
+  }
+  .banner{
+    height: 500px;
+  }
+  table {
+    table-layout: auto;
+  }
+}
+@media (max-width: 768px) {
+
+    header img{
+   width: 50px; 
+  }
+  .bannerrow p {
+    font-size: small;
+  }
+   .centercontentheading {
+    text-align: center;
+  }
+   .bookbtn {
+   
+    margin: 0 auto;
+  }
+}
+@media (max-width:576px) {
+   
+    .banner {
+    height: auto;
+    color: #fff;
+  }
+   .bannerrow {
+    height: auto;
+    background: rgba(0, 0, 0,0.3);
+  }
+ 
+  
+}
