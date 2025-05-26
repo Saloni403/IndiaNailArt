@@ -58,6 +58,12 @@ font-size: 2.5vmax;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 border-radius: .5rem;
 }
+.instaicon{
+   padding: 6px 8px;
+    font-size: 2.5vmax;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: .5rem;
+}
 .mobilephone{
   background-color: #fff;
   padding: 6px;
@@ -76,21 +82,28 @@ border-radius: .5rem;
     }
 
     /* banner */
-    .banner {
+    .banner1 {
   height: 600px;
   background-image: url(../images/herobannerimg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+ .banner2 {
+  height: 600px;
+  background-color: var(--lightpink-color);
+}
 .bannerrow {
   height: 600px;
-  padding: 20px 0;
+  padding: 20px 0;  
+ 
 }
 .bannerrow h1 {
   font-size: 70px;
 }
-
+ .hiddentext{
+  text-align: center;
+  }
 .centercontentheading{
     height: 100%;
     display: flex;
@@ -168,16 +181,29 @@ footer li a {
   }
    .bannerrow h1 {
     font-size: 6vmin;
+     margin-bottom: 0.25rem !important;
+  }
+  .bannerrow p{
+    margin-bottom: 0.25rem !important;
   }
   .bannerrow {
      height: 500px;
+     padding: 0;
   }
-  .banner{
+  .banner1,.banner2{
     height: 500px;
   }
   table {
     table-layout: auto;
   }
+  .hiddentext p{
+    display: none;
+  }
+  
+  .bannerimg{
+    width: 100% !important;
+  }
+  
 }
 @media (max-width: 768px) {
 
@@ -191,20 +217,23 @@ footer li a {
     text-align: center;
   }
    .bookbtn {
-   
     margin: 0 auto;
   }
+  
 }
 @media (max-width:576px) {
    
-    .banner {
-    height: auto;
+    .banner1, .banner2 {
+    height: 70vw;
     color: #fff;
   }
+  .hiddentext a{
+    font-size: 0.5rem;
+  }
    .bannerrow {
-    height: auto;
+    height: 70vw;
     background: rgba(0, 0, 0,0.3);
   }
- 
+
   
 }
